@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="van-YJ-621">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="JOW-fl-roF"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="eeL-Ue-Sbi">
+                                <rect key="frame" x="0.0" y="376" width="414" height="144"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shopping Bag" translatesAutoresizingMaskIntoConstraints="NO" id="b2W-hS-uwH">
+                                        <rect key="frame" x="157" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="IWD-4P-9b9"/>
+                                            <constraint firstAttribute="width" constant="100" id="vKk-OZ-OfJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoppy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1c-jq-0GA">
+                                        <rect key="frame" x="171" y="120" width="72" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkb-tY-7Cw">
+                                <rect key="frame" x="0.0" y="716" width="414" height="180"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="DEv-xj-nzx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eeL-Ue-Sbi" secondAttribute="trailing" id="4NX-aB-tvZ"/>
+                            <constraint firstItem="eeL-Ue-Sbi" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="50B-EH-u8g"/>
+                            <constraint firstItem="Hkb-tY-7Cw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FvA-J4-u9q"/>
+                            <constraint firstItem="van-YJ-621" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M56-PA-ZMU"/>
+                            <constraint firstItem="eeL-Ue-Sbi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SLl-cK-mtz"/>
+                            <constraint firstAttribute="bottom" secondItem="Hkb-tY-7Cw" secondAttribute="bottom" id="npI-7n-jfb"/>
+                            <constraint firstItem="van-YJ-621" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wHc-fi-5RU"/>
+                            <constraint firstItem="van-YJ-621" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="z93-7m-Sna"/>
+                            <constraint firstItem="Hkb-tY-7Cw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zDI-Xn-d38"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shopping Bag" width="50" height="50"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.23100003600120544" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
