@@ -11,7 +11,7 @@ class CacheManager {
     
     private static let cache: NSCache = NSCache<AnyObject, AnyObject>()
     
-    static func setObject(_ obj: UIImage, forKey key: String) {
+    static func setImage(_ obj: UIImage, forKey key: String) {
         cache.setObject(obj, forKey: key as AnyObject)
     }
     
