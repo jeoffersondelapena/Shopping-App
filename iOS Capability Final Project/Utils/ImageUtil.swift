@@ -20,7 +20,7 @@ class ImageUtil {
             return
         }
         
-        imageView?.image = UIImage(named: Constants.imgLoading)
+        imageView?.image = Constants.placeholderImage
         
         guard let url = URL(string: urlString) else {
             return
