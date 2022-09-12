@@ -10,6 +10,6 @@ import Foundation
 extension Double {
     
     func toDollarFormatString() -> String {
-        return String(format: "$%.02f", self)
+        String(format: "$%.02f", self)
     }
 }
