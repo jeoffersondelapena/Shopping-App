@@ -39,7 +39,7 @@ class ImageUtil {
                 completion(image, index)
             }
             
-            CacheManager.setObject(image, forKey: urlString)
+            CacheManager.setImage(image, forKey: urlString)
         }
     }
 }
