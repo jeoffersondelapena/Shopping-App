@@ -49,7 +49,7 @@ class ShoppingListViewController: UIViewController {
     }
     
     private func loadContent(isFirstTime: Bool = false) {
-        if (isFirstTime) {
+        if isFirstTime {
             refreshControl.beginRefreshing()
         }
         ShoppingItemAPI.getShoppingItems { [weak self] shoppingItems, error in
