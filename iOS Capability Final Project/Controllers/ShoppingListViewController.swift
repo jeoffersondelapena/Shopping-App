@@ -53,12 +53,17 @@ class ShoppingListViewController: UIViewController {
             refreshControl.beginRefreshing()
         }
         ShoppingItemAPI.getShoppingItems { [weak self] shoppingItems, error in
+            guard let self = self else {
+                return
+            }
+            
             guard let shoppingItems = shoppingItems, error == nil else {
                 return
             }
-            self?.shoppingItems = shoppingItems
-            self?.tvShoppingItems.reloadData()
-            self?.refreshControl.endRefreshing()
+            
+            self.shoppingItems = shoppingItems
+            self.tvShoppingItems.reloadData()
+            self.refreshControl.endRefreshing()
         }
     }
 }

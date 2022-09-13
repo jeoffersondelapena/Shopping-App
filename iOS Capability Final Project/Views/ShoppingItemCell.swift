@@ -18,8 +18,11 @@ class ShoppingItemCell: UITableViewCell {
         
         ivImage.image = nil
         ImageUtil.getImage(fromURLString: shoppingItem.image, index) { [weak self] image, index in
-            if index == self?.tag {
-                self?.ivImage.image = image
+            guard let self = self else {
+                return
+            }
+            if index == self.tag {
+                self.ivImage.image = image
             }
         }
         
