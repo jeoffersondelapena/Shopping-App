@@ -35,11 +35,11 @@ class ShoppingListViewController: UIViewController {
     }
     
     private func setUpRefreshControl() {
-        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        refreshControl.addTarget(self, action: #selector(self.refreshTableView(_:)), for: .valueChanged)
         tvShoppingItems.addSubview(refreshControl)
     }
     
-    @objc private func refresh(_ sender: AnyObject) {
+    @objc private func refreshTableView(_ sender: AnyObject) {
         loadContent()
     }
     
