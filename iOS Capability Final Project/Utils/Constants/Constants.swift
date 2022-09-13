@@ -13,5 +13,5 @@ struct Constants {
     
     static let segueIDGoToShoppingItemDetailScreen = "goToShoppingItemDetailScreen"
     
-    static let placeholderImage = UIImage(named: "Loading")
+    static let placeholderImage = UIImage(named: "Loading")!
 }

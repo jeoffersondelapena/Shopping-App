@@ -9,18 +9,13 @@ import UIKit
 
 class ImageUtil {
 
-    static func getImage(
-        fromURLString urlString: String,
-        _ imageView: UIImageView? = nil,
-        _ index: Int = -1,
-        completion: @escaping (UIImage, Int) -> Void)
-    {
+    static func getImage(fromURLString urlString: String,_ index: Int = -1,completion: @escaping (UIImage, Int) -> Void) {
         if let image = CacheManager.getImage(forKey: urlString) {
             completion(image, index)
             return
         }
         
-        imageView?.image = Constants.placeholderImage
+        completion(Constants.placeholderImage, index)
         
         guard let url = URL(string: urlString) else {
             return

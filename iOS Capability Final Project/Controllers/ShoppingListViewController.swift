@@ -19,7 +19,7 @@ class ShoppingListViewController: UIViewController {
         super.viewDidLoad()
         setUpRefreshControl()
         setUpTableView()
-        loadContent(true)
+        loadContent(isFirstTime: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,7 +48,7 @@ class ShoppingListViewController: UIViewController {
         tvShoppingItems.dataSource = self
     }
     
-    private func loadContent(_ isFirstTime: Bool = false) {
+    private func loadContent(isFirstTime: Bool = false) {
         if (isFirstTime) {
             refreshControl.beginRefreshing()
         }
