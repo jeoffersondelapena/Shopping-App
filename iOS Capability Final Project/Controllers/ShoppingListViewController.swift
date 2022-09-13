@@ -39,7 +39,7 @@ class ShoppingListViewController: UIViewController {
         tvShoppingItems.addSubview(refreshControl)
     }
     
-    @objc func refresh(_ sender: AnyObject) {
+    @objc private func refresh(_ sender: AnyObject) {
         loadContent()
     }
     
