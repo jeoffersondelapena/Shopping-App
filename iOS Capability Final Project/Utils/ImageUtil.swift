@@ -9,7 +9,7 @@ import UIKit
 
 class ImageUtil {
 
-    static func getImage(fromURLString urlString: String,_ index: Int = -1,completion: @escaping (UIImage, Int) -> Void) {
+    static func getImage(fromURLString urlString: String, _ index: Int = -1, completion: @escaping (UIImage, Int) -> Void) {
         if let image = CacheManager.getImage(forKey: urlString) {
             completion(image, index)
             return
